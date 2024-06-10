@@ -31,7 +31,8 @@ is strongly advised as this has not been thoroughly tested.
 
 ## Installation:
 - The script itself should be placed in /opt/Autodesk/archive if intending to run when
-Flame exits.  See *Usage* section to automatically launch after Flame exits.
+Flame exits.  Be sure to make the script executable.  See *Usage* section to automatically
+launch after Flame exits.
 
 
 ## Setup

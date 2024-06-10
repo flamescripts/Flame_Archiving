@@ -59,19 +59,43 @@ Default value is "false" and will allow script to continue.
 
 ## Usage
 
-The script can be setup to either run without user intervention or to seek user input.  To run
+The script can be set up to either run without user intervention or to seek user input.  To run
 after Flame closes, add the following snippet at the end of the 'runApplication' function,
-immediately above 'return exitStatus' in the startApplication launcher.  An example
-startApplication is provided for 2025.0.1.
+immediately above 'return exitStatus' in the startApplication launcher.  *Flame will need to be
+started from the terminal, not an icon*.  An example startApplication is provided for 2025.0.1
+in this folder and a snippet included below:
 
+**Before**:
 ```
+    else:
+        vrefPath = initVref(homeDirectory)
+        exitStatus = startApplication(programPath, vrefPath)
+
+    return exitStatus
+```
+
+**After**:
+```
+    else:
+        vrefPath = initVref(homeDirectory)
+        exitStatus = startApplication(programPath, vrefPath)
+
+    ## Flame After Session Archiver begin ##
+
+    # Create variable for the bash script.  Create a visual break from the official script.
     flame_after_session_archiver = "/opt/Autodesk/archive/flame_after_session_archiver.sh"
     print("\n" * 5)
+    # Execute script if this file, flame_after_session_archiver exists. Otherwise present an error.
     if os.path.isfile(flame_after_session_archiver):
     # Use subprocess.call to run the bash script and wait for it to finish
     	result = subprocess.call(['bash', flame_after_session_archiver])
     else:
     	print("Archival script not found at $flame_after_session_archiver.")
+
+    ## Flame After Session Archiver end ##
+
+    return exitStatus
+
 ```
 
 The script can also be ran directly or added to a crontab from the command line. The

@@ -25,6 +25,7 @@ Compact and Omitted archives intentionally do not force all source media into th
 7. The script creates or appends to the Flame archive under `archive_storage_path`.
 8. The actual archive location and effective archive type are written to `state.json` while the archive is running.
 9. The state file is removed after the archive completes successfully.
+10. Uploads the completed archive to Flow Production Tracking or other destination.  (Coming Soon).
 
 If archiving fails, the state file is preserved for troubleshooting and remains queued. Unless the request is cleared, the wrapper will retry it after a later Flame session exits.
 

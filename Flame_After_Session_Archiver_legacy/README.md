@@ -1,4 +1,4 @@
-# Flame After Session Archiver
+# Flame After Session Archiver (LEGACY)
 
 ***---> NOT TESTED WITH PBM (2026+).  Use the updated version instead. <---***
 

@@ -1,7 +1,7 @@
 # Flame_Archiving
 Various scripts to encourage and assist in making frequent Flame Archives.
 
-### Flame After Session Archiver
+### Flame After Session Archiver (Legacy - For use with Flame 2025 and older.)
 A utility intended to provide you with one less excuse not to archive after your Flame session.  Designed to assist in archiving projects for Autodesk Flame and will archive the most recent utilized project.  This script is configured to archive projects upon exiting Flame and offers options for various types of archiving: Normal, Compact, or Omitted. It can be executed automatically or manually. Tested in 2025, work in progress.
 
 ### Flame Project Archive Assist Tool

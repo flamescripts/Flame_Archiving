@@ -1,5 +1,7 @@
 # Flame After Session Archiver
 
+***---> NOT TESTED WITH PBM (2026+).  Use the updated version instead. <---***
+
 A simple utility intended to give you one less reason not to archive daily.  It was
 designed to help with archiving projects on Autodesk Flame. It can be setup to 
 automatically archive projects after closing Flame or manually archive them based on user

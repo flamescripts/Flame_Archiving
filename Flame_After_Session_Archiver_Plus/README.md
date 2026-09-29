@@ -1,4 +1,4 @@
-# Flame After Session Archiver Plus
+# Flame After Session Archiver
 
 Scripts for making frequent Flame project archives after a Flame session exits.
 
